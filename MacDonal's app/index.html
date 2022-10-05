@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virual McDonald's</title>
+    <style>
+        body{
+            background-color: yellowgreen;
+            border: 5px dotted brown;;
+        }
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      h2{
+          text-align: center;
+          color:brown;
+      }
+ #checkboxContainer{
+     height:300px;
+     width:40%;
+     border:1px solid black;
+     margin:auto;
+     margin-top:10px;   
+     background-image: url("https://www.mcdonalds.com/content/dam/sites/usa/nfl/publication/1PUB_Loyalty_FLFv2_1168x520.jpg");
+      background-size: cover;
+      margin-top: -2.5%;
+ 
+    }  
+ #checkboxContainer>div{
+    box-sizing: border-box;
+    padding-left: 50px;
+       
+ }
+ #checkboxContainer>div>input{
+     margin-bottom: 10px;
+    
+ }
+ #checkboxContainer>div>label{
+    font-size: 20px;
+    color: white;
+ }
+ button{
+     border:none;
+     font-size: 17px;
+     padding: 10px 14px;
+     background-color: white;
+     color:brown;
+     font-weight: bolder;
+     margin-top: 30px;
+     border: 2px solid brown;
+     border-radius: 5px;
+    
+     
+ }
+ #container{
+     height:400px;
+     width:auto;
+     border:2px solid blue;
+     margin: auto;
+     display: flex;
+     background-color: whitesmoke;
+    
+ }
+ #container>div{
+     width:24%;
+     height:100%;
+     /* border:1px solid red; */
+     display: flex;
+    
+
+ }
+ #container>div>img{
+     width:100%;
+ }
+ #orderId{
+     height:40px;
+     width:210px;
+
+     border:1px solid red;
+   margin-left: 80%;
+   color: white;
+   font-weight: bold;
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+   
+ }
+    </style>
+</head>
+<body>
+
+    <div id="orderId"></div>
+    <div id="checkboxContainer">
+        <h2>Select Your Food</h2>
+          <div>
+              <input type="checkbox" id="beverage" class="selectFood" value="Beverage">
+               <label for="beverage">Beverage</label> <br>
+               <input type="checkbox" id="breakfast" class="selectFood" value="Breakfast">
+               <label for="breakfast">Breakfast</label> <br>
+               <input type="checkbox" id="burgers" class="selectFood" value="Burgers">
+              <label for="burgers">Burgers</label> <br>
+              <input type="checkbox" id="combo_meal" class="selectFood" value="Combo Meal">
+              <label for="combo_meal">Combo Meal</label> <br>
+             <button onclick="orderFood()">Order Food</button>
+         </div>
+ </div>
+
+    <h2>Please Get your Food Here</h2>
+<div id="container">
+
+
+</div>
+
+</body>
+</html>
+<script src="index.js">
+
+</script>
+
+<script>
+
+
+
+
+
+/////////////////////////////////////////////////////////////
+//  let arr = [];
+//  function orderFood(){
+   
+
+//   let beverage= document.querySelector("#beverage");
+//   let breakfast = document.querySelector("#breakfast");
+//   let burgers = document.querySelector("#burgers");
+//   let combo_meal =document.querySelector("#combo_meal");
+//   if(beverage.checked){
+//      beverage = beverage.value;
+//      arr.push(beverage,)
+//    //  console.log(beverage)
+//   }
+//   if(breakfast.checked){
+//       breakfast = breakfast.value;
+//       arr.push(breakfast)
+//      // console.log(breakfast)
+//   }
+//   if(burgers.checked){
+//       burgers= burgers.value;
+//       arr.push(burgers)
+//      // console.log(burgers)
+//   }
+//   if(combo_meal.checked){
+//      combo_meal = combo_meal.value;
+//      arr.push(combo_meal)
+//   }
+
+//   pass(arr)
+//   arr=[];
+ 
+//  }
+
+
+// function check(){
+//     return true;
+// }
+
+// let container = document.querySelector("#container")
+// function pass(arr){
+//     //console.log(arr)
+//    arr.forEach(function(elem){
+
+//     let h2 = document.createElement("h2");
+      
+//      if(elem=="beverage"){
+//          h2.innerText="Your food Beverage is being ready"
+//          console.log(h2)
+//      }
+
+//     container.append(h2)
+//     console.log(container)
+//    })
+
+
+
+// }
+ 
+
+
+
+
+
+
+</script>
